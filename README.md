@@ -1,0 +1,1 @@
+# Szekely_Elisabeth-Mirjam_Jurnal_al_produsului
