@@ -1,0 +1,21 @@
+@startuml
+actor "Utilizator Autentificat" as User
+actor "Colaborator Repository" as Collaborator
+
+User --> (Fork Repository)
+User --> (Clone Repository)
+User --> (Comitează Modificări)
+
+Collaborator --> (Creează Pull Request)
+(Creează Pull Request) --> (Selectează Branch)
+(Creează Pull Request) --> (Completează Descriere)
+(Creează Pull Request) --> (Trimite Pull Request)
+
+note right of (Creează Pull Request)
+  Flux principal:
+  1. Fork/repository original
+  2. Clone și modifică fișiere
+  3. Trimite pull request
+end note
+
+@enduml
