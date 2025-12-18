@@ -1,0 +1,18 @@
+@startuml
+!define RECTANGLE class
+ 
+' Creare secțiuni pentru Wireframe GitHub - Creare depozit
+RECTANGLE "Pagina Creare Depozit" as page {
+  RECTANGLE "Nume Depozit: [____________________]" as repo_name
+  RECTANGLE "Descriere: [_________________________]" as description
+  RECTANGLE "Vizibilitate: [Public] [Privat]" as visibility
+  RECTANGLE "[ Crează depozitul ]" as create_button
+}
+ 
+' Plasare componentelor Wireframe pe pagina
+page -down-> repo_name : Plasare Nume Depozit
+page -down-> description : Plasare Descriere
+page -down-> visibility : Plasare Vizibilitate
+page -down-> create_button : Plasare Butonul
+ 
+@enduml
