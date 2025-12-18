@@ -1,0 +1,20 @@
+//LABORATORUL 10
+//use case 1
+@startuml
+actor "Utilizator Autentificat" as User
+
+User --> (Creare Repository)
+(Creare Repository) --> (Completare Detalii Repository)
+(Creare Repository) --> (Alege Vizibilitate)
+(Creare Repository) --> (Confirmare Creare)
+
+note right of (Creare Repository)
+  Flux principal: 
+  1. Accesare pagina principală GitHub
+  2. Apăsare "New Repository"
+  3. Completare detalii repository
+  4. Apăsare "Create Repository"
+  5. Confirmare succes
+end note
+
+@enduml
