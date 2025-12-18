@@ -1,0 +1,23 @@
+@startuml
+|Utilizator|
+start
+:Autentificare utilizator;
+:Accesare secțiunea „Create New Repository”;
+:Introducere detalii depozit;
+:Creare depozit pe GitHub;
+:Inițializare depozit local;
+ 
+partition "Adăugare fișiere" {
+  :Adăugare fișiere în depozit;
+  :Adăugare fișiere în staging area (git add);
+}
+ 
+partition "Comitere și împingere" {
+  :Comitere modificări (git commit);
+  :Împingere fișiere pe GitHub (git push);
+}
+ 
+:Verificare depozit pe GitHub;
+ 
+stop
+@enduml
